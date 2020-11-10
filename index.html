@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>APS Shankar Vihar E-portal</title>
+	<link rel="stylesheet" type="text/css" href="file:///Users/rushielmenon/Desktop/Rushiel%20Menon/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="file:///Users/rushielmenon/Desktop/Rushiel%20Menon/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body{
+			background-color: black;
+			color:white;
+		}
+		.a{
+			text-decoration: none;
+			color: orange;
+		    padding: 20px;
+            font-size:33px;
+            font-family:cursive;
+            margin-right: 15px
+
+	     }
+	     li:hover{
+	     	background-color:grey; 
+	     }
+	     li{
+	        list-style-type: none;
+	        display: inline;
+	        padding:25px 20px 20px 20px;
+	     }
+         #loader{
+			width: 300px;
+			height:300px;
+			border: solid 17px orange;
+			border-radius: 50%;
+			border-top: solid 17px pink;
+			margin-left: auto;
+			margin-bottom: auto;
+			margin-right: auto;
+			margin-top: 300px;
+		    animation-name: loader;
+		    animation-duration: 1s; 
+		    animation-iteration-count: infinite;
+		    animation-timing-function: linear;
+		    margin-top: 100px
+
+		}
+		@keyframes loader{
+			0%{transform: rotate(0deg);}
+			50%{transform: rotate(180deg);}
+			100%{transform: rotate(360deg);}
+		}
+	
+		
+	</style>
+</head>
+<body onload="loader()">
+	<div id="loader"></div>
+	<div id="website" style="display: none;">
+	<ul>
+		<li><a href="Login.html" class="a" target="_blank">Sign In</a></li>
+		<li><a href="account.html" class="a" target="_blank">Sign Up</a></li>
+                <li><a href="leve.html" class="a" target="_blank">Levels and Timings</a></li>
+		<li><a class="a" href="classes.html" target="_blank">Online Classes</a></li>
+		<li><a class="a" href="About3.html" target="_blank">About</a></li>
+
+    </ul>
+	<h1>APS SV E-portal</h1>
+	<p>Hi! This is The Army Public School Shankar Vihar Electronic portal!</p>
+	<p>Here we teach you what you would have been learning in school before the national lockdown! ( For grades 1 to 8 Army Public School Shankar Vihar students only)</p>
+	<p>So lets get started by registering! For more details go to <a href="About2.html" target="_blank" style="color: yellow">Why should I register? </a></p>
+    <iframe src="https://www.youtube.com/embed/5Y_pXbcfqOk" style="width:300px; height:300px;"></iframe>
+</div>
+	
+</body>
+</html>
+<script type="text/javascript">
+	function loader(){
+		setTimeout(showText, 1000);
+	}
+	function showText(){
+		var a = document.getElementById('loader');
+		a.style.display="none";
+		var b = document.getElementById('website')
+		b.style.display="block";
+
+	}
+</script>

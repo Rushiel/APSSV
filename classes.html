@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Classes</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+			color: lightgreen;
+		}
+		a{
+            text-decoration: none;
+            color: beige;
+		}
+		 #loader{
+			width: 300px;
+			height:300px;
+			border: solid 17px orange;
+			border-radius: 50%;
+			border-top: solid 17px pink;
+			margin-left: auto;
+			margin-bottom: auto;
+			margin-right: auto;
+			margin-top: 300px;
+		    animation-name: loader;
+		    animation-duration: 1s; 
+		    animation-iteration-count: infinite;
+		    animation-timing-function: linear;
+		    margin-top: 100px
+
+		}
+		@keyframes loader{
+			0%{transform: rotate(0deg);}
+			50%{transform: rotate(180deg);}
+			100%{transform: rotate(360deg);}
+		}
+		li{
+	        list-style-type: none;
+	        display: inline;
+	        padding:25px 20px 20px 20px;
+	     }
+		
+	</style>
+</head>
+	<body onload="loader()">
+	<div id="loader"></div>
+	<div id="website" style="display: none;">
+		<ul>
+		<li><a href="Login.html" class="a" target="_blank">Login</a></li>
+		<li><a href="account.html" class="a" target="_blank">Create your Account!</a></li>
+
+		<li><a class="a" href="classes.html" target="_blank">Our Classes</a></li>
+		<li><a href="leve.html" class="a" target="_blank">Levels and Timings</a></li>
+		
+		
+		<li><a class="a" href="About3.html" target="_blank">About</a></li>
+
+    </ul>
+
+	<h1>Join Our classes!</h1>
+	<ul>
+		<li><p>Class 1 -  Sheela ma'am - <a href="https://hangouts.google.com/call/gBSXlJ5Jay3s7J3dbgLPACEM">Join!</a></p></li>
+		<li><p>Class 2 - Stella ma'am - <a href="https://hangouts.google.com/call/nlGmv8fJT2OUaRx7n0oQACEM">Join!</a></p></li>
+		<li><p>Class 3 - Rachna ma'am - <a href="https://hangouts.google.com/call/KpcApW1X_tcbcLmaRCTuACEM">Join!</a></p></li>
+		<li><p>Class 4 - Poonam ma'am - <a href="https://hangouts.google.com/call/wOoSrEnsKOfpVCwXqE1qACEM">Join!</a></p></li>
+		<li><p>Class 5 - Jasneet ma'am - <a href="https://hangouts.google.com/call/SdjWfjhbqbpw7u2_YHupACEM">Join!</a></p></li>
+		<li><p>Class 6 - Parul ma'am - <a href="https://hangouts.google.com/call/S6faNeuYJPqqu-NGluR2ACEM">Join!</a></p></li>
+		<li><p>Class 7 - Deevya ma'am - <a href="https://hangouts.google.com/call/VG8skNibnBnYM4oHgL5CACEM">Join!</a></p></li>
+		<li><p>Class 8 - Kadam ma'am - <a href="https://hangouts.google.com/call/DY7P6sGgM2hv6xXv3FQnACEM">Join!</a></p></li>
+	</ul>
+		<p></p>
+		<a href="https://rushiel.github.io" style="color:yellow;">Home</a>
+
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	function loader(){
+		setTimeout(showText, 1000);
+	}
+	function showText(){
+		var a = document.getElementById('loader');
+		a.style.display="none";
+		var b = document.getElementById('website')
+		b.style.display="block";
+
+	}
+</script>
